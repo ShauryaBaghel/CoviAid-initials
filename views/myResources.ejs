@@ -1,0 +1,45 @@
+<%- include('partials/headernew') %>
+<h1 class="centered">My Contributions</h1>
+</section>
+<div class="logoutButton">
+    <a class="btn btn-dark btn-lg" href="/myResources" role="button">My Resources</a>
+    <a class="btn btn-light btn-lg" href="/submit" role="button">Add Resources</a>
+    <a class="btn btn-dark btn-lg" href="/myResources" role="button">Remove Resources</a>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+</div>
+<div class=" text-center">
+  <div class="container">
+    <hr>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Resource</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">City</th>
+          <th scope="col">Contact</th>
+          <th scope="col">More Information</th>
+          <th scope="col">Delete Resource</th>
+        </tr>
+      </thead>
+      <tbody>
+
+          <%foundResources.forEach(function(foundResource){%>
+          <tr>
+          <td> <%=foundResource.resource%> </td>
+          <td><%=foundResource.quantity%></td>
+          <td><%=foundResource.city%></td>
+          <td><%=foundResource.phone%></td>
+          <td><a href="/ResourceId=<%=foundResource.id%>">...read more</a></td>
+          <td>
+            <form class="" action="/deleteResource" method="post">
+              <button class="btn btn-dark btn-md" type="submit" name="deleteResource" value=<%=foundResource.id%> >Delete</button>
+            </form>
+          </td>
+          </tr>
+          <%});%>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('partials/footernew') %>

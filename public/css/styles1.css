@@ -1,0 +1,153 @@
+
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  padding: 0 0 2%;
+}
+.centered {
+    padding: 0 auto 20px;
+    text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+.black {
+  color: black;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.nav-img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+/* title */
+#title {
+  background-color: #005180;
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 15% 3%;
+}
+
+/* email submition */
+.EmailCollector {
+  margin-top: 15px;
+}
+
+.clientEmail {
+  display: inline;
+  float: left;
+  width: 80%;
+  text-align: left;
+}
+
+.emailButton {
+  display: inline;
+  width: 18%;
+  float: right;
+}
+
+/* download button */
+.download-button {
+  margin: 5% 3% 5% 5%;
+  width: 40%;
+}
+
+/* title image */
+.title-image {
+  width: 100%;
+  position: relative;
+}
+
+/* title in small screen */
+@media (max-width:1028px) {
+  .title-image {
+    transform: rotate(0);
+    position: static;
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+
+#cta {
+  text-align: center;
+  background-color: #005180;
+}
+
+.cta-heading {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+  padding: 3% 20% 0;
+}
+#cta p {
+  color: white;
+}
+.download-button-cta {
+  margin: 20px 10px 5%;
+}
+
+.logoutButton {
+  text-align: center;
+  background-color: #005180;
+  padding: 20px;
+}
+
+
+/* <!-- Footer --> */
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+
+}
+
+.footer-icon {
+  margin: 10px 10px;
+}

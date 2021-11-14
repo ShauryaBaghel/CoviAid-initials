@@ -1,0 +1,57 @@
+<%- include('partials/headernew') %>
+<h1 class="centered">Resource Details</h1>
+</section>
+<div class="container">
+<hr>
+<table class="table centreTable">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Tags</th>
+      <th scope="col centered">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td> Name </td>
+      <td><%=foundResource.name%></td>
+      </tr>
+      <tr>
+      <td> Email </td>
+      <td><%=foundResource.email%></td>
+      </tr>
+      <tr>
+      <td> Phone No. </td>
+      <td><%=foundResource.phone%></td>
+      </tr>
+      <tr>
+      <td> Address </td>
+      <td><%=foundResource.address%></td>
+      </tr>
+      <tr>
+      <td> City </td>
+      <td><%=foundResource.city%></td>
+      </tr>
+      <tr>
+      <td> State </td>
+      <td><%=foundResource.state%></td>
+      </tr>
+      <tr>
+      <td> Pincode </td>
+      <td><%=foundResource.zip%></td>
+      </tr>
+      <tr>
+      <td> Resource </td>
+      <td><%=foundResource.resource%></td>
+      </tr>
+      <tr>
+      <td> Quantity </td>
+      <td><%=foundResource.quantity%></td>
+      </tr>
+      <tr>
+      <td> Addtional Information </td>
+      <td><%=foundResource.addInfo%></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<%- include('partials/footernew') %>
